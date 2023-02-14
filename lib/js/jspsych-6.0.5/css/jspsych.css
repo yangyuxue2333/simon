@@ -1,0 +1,237 @@
+/*
+ * CSS for jsPsych experiments.
+ *
+ * This stylesheet provides minimal styling to make jsPsych
+ * experiments look polished without any additional styles.
+ */
+
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+/* Container holding jsPsych content */
+
+ .jspsych-display-element {
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+ }
+
+ .jspsych-display-element:focus {
+   outline: none;
+ }
+
+ .jspsych-content-wrapper {
+   display: flex;
+   margin: auto;
+   flex: 1 1 100%;
+   width: 100%;
+ }
+
+ .jspsych-content {
+   max-width: 95%; /* this is mainly an IE 10-11 fix */
+   text-align: center;
+   margin: auto; /* this is for overflowing content */
+   /* padding-top: 150px; */
+   padding-top: 50;
+ }
+
+ .jspsych-top {
+   align-items: flex-start;
+ }
+
+ .jspsych-middle {
+   align-items: center;
+ }
+
+/* fonts and type */
+
+.jspsych-display-element {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+/* Form elements like input fields and buttons */
+
+.jspsych-display-element input[type="text"] {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+/* borrowing Bootstrap style for btn elements, but combining styles a bit */
+.jspsych-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  cursor: pointer;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.jspsych-btn:hover {
+  background-color: #ddd;
+  border-color: #aaa;
+}
+
+.jspsych-btn:disabled {
+  background-color: #eee;
+  color: #aaa;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* jsPsych progress bar */
+
+#jspsych-progressbar-container {
+  color: #555;
+  border-bottom: 1px solid #dedede;
+  background-color: #f9f9f9;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: 8px 0px;
+  width: 100%;
+  line-height: 1em;
+}
+#jspsych-progressbar-container span {
+  font-size: 14px;
+  padding-right: 14px;
+}
+#jspsych-progressbar-outer {
+  background-color: #eee;
+  width: 50%;
+  margin: auto;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+#jspsych-progressbar-inner {
+  background-color: #aaa;
+  width: 0%;
+  height: 100%;
+}
+
+/* Control appearance of jsPsych.data.displayData() */
+#jspsych-data-display {
+  text-align: left;
+}
+
+/* instruction and consente paragraph */
+.leftp {
+  text-align: left;
+}
+
+/* prome text format */
+.prompt {
+  font-style: italic;
+  color: gray;
+}
+
+#prime_sentence{
+  display: block;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border:2px solid gray;
+  border-radius:30px;
+  padding: auto; 
+
+}
+.yn_promt {
+  font-style: bold;
+  color: red;
+}
+
+/* this is image stimuli size*/
+#jspsych-categorize-image-stimulus{
+  max-width: 500px;
+}
+
+#avatar{
+  display: block;
+  float: left;
+  top: 20px;
+  max-width: 100px;
+  border: 2px solid #D3D3D3;
+  border-radius: 50%;
+}
+
+#typing {
+  display: block;
+  float: left;
+  top: 20px;
+  max-width: 200px;
+}
+
+.avatar{
+   display: inline-block;
+}
+.typing{
+   display: inline-block;
+}
+
+#paring_waiting{
+  height: 150%;
+}
+
+#pair-avatar{
+  display: inline;
+  float: center;
+  top: 20px;
+  width: 200px;
+  border: 2px solid #D3D3D3;
+  border-radius: 50%;
+}
+
+#pair-ok{
+  max-width: 300px;
+  display: inline;
+  float: center;
+}
+
+.consent-page p{
+  text-align: left;
+}
+
+.footnotes p{
+  text-align: right;
+  font-style: italic;
+  color: gray;
+  font-size: 10px;
+  position: absolute;
+}
+
+/*.talking{
+  max-width: 300px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}*/
+
+/*#avatar {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: -1;
+  max-width: 60px;
+  /*left: 50px;
+  top: 50px;*/
+/*  border: 2px solid #D3D3D3;
+  border-radius: 50%;*/
+}
+
+/*#player1-avatar{
+  text-align: left;
+  font-weight: bold;
+}*/

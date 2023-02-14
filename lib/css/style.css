@@ -1,0 +1,59 @@
+#stim1 {
+	width: 15vw;
+	height: 20vw;
+	background: red;
+}
+
+#stim2 {
+	width: 15vw;
+	height: 20vw;
+	background: blue;
+}
+
+.simon_left {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-200%,-50%);
+}
+
+.simon_right {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(100%,-50%);
+}
+
+.responded {
+  visibility: hidden;
+}
+
+.leftbox {
+  width: 50vw;
+  height: 60vh;
+  position:absolute;
+  top:50%;
+  left:30%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+}
+
+.rightbox {
+  width: 50vw;
+  height: 60vh;
+  position:absolute;
+  top:50%;
+  right:30%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Centered Image Code */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid #dbe4ed; /* Border color is optional */ 
+
+}
